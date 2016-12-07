@@ -60,18 +60,18 @@
 </tr>
 </tbody>
 </table>
-<p>The natural choice for a design involving 4 input variables is a 4-input multiplexer, and the best choice for the Select inputs for BCD input is BA, as that would give us the maximum benefit of don&rsquo;t care combinations.</p>
+<p>The natural choice for a design involving 4 input variables is a 4-input multiplexer, and the best choice for the Select inputs for BCD input is BA, as that would give us the maximum benefit of <font style="color: black; background-color: lime;">don&rsquo;t</font> care combinations.</p>
 <img src="http://cse15-iiith.vlabs.ac.in/images/7-segment-decoder.png" />
-<p>There are only five distinct values that these 28 data inputs have, and these are 0, 1, C, C&rsquo; and D&rsquo;&bull;C&rsquo; = (D + C)&rsquo;. Thus a 2-input NOR gate and an inverter are all that is needed to generate all the required data inputs. Moreover, one realises that as 4-input multiplexers come two in a chip, one multiplexer IC would only be half utilised if all the 7 outputs are generated with multiplexers, and hence one could save on the chip count if one of the segment inputs could be realised using 2-input NOR gates, already being used for generating D&rsquo;&bull;C&rsquo;. Segments b, c and e have the simplest expressions and are thus possible candidates for this option. Find out which of these three would be the best choice for realisation using 2-input NOR gates. We will thus be using three dual 4-input multiplexers (74LS153), and one quad 2-input NOR gate (74LS02).</p>
+<p>There are only five distinct values that these 28 data inputs have, and these are 0, 1, C, C&rsquo; and D&rsquo;&bull;C&rsquo; = (D + C)&rsquo;. Thus a 2-input NOR gate and an inverter are all that is needed to generate all the required data inputs. Moreover, one realizes that as 4-input multiplexers come two in a chip, one multiplexer <font style="color: black; background-color: lime;">IC</font> would only be half utilized if all the 7 outputs are generated with multiplexers, and hence one could save on the chip count if one of the segment inputs could be realized using 2-input NOR gates, already being used for generating D&rsquo;&bull;C&rsquo;. Segments b, c and e have the simplest expressions and are thus possible candidates for this option. Find out which of these three would be the best choice for realization using 2-input NOR gates. We will thus be using three dual 4-input multiplexers (<font style="color: black; background-color: lime;">74LS153</font>), and one quad 2-input NOR gate (<font style="color: black; background-color: lime;">74LS02</font>).</p>
 <img src="http://cse15-iiith.vlabs.ac.in/images/7segmentMux.png" />
 <h3>Inputs and outputs</h3>
 <table border="3">
 <tbody>
 <tr>
-<td>I0</td>
-<td>I1</td>
-<td>I2</td>
-<td>I3</td>
+<td><font style="color: black; background-color: lime;">I0</font></td>
+<td><font style="color: black; background-color: lime;">I1</font></td>
+<td><font style="color: black; background-color: lime;">I2</font></td>
+<td><font style="color: black; background-color: lime;">I3</font></td>
 <td>Output</td>
 </tr>
 <tr>
@@ -146,6 +146,6 @@
 </tr>
 </tbody>
 </table>
-<p><font size="2"><i><b>Source: Wikipedia</b></i></font></p>
+<p><span style="font-size: small;" size="2"><i><b>Source: <font style="color: black; background-color: lime;">Wikipedia</font></b></i></span></p>
 </div>
 <p></p>
