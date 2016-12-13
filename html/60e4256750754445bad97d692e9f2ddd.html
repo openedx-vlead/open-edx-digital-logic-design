@@ -1,0 +1,246 @@
+<div class="content" id="experiment-article-section-2-content">
+<h6><b>Half Adder </b></h6>
+<p><img name="graphics2" src="http://cse15-iiith.vlabs.ac.in/images/Half_Adder.svg.png" align="LEFT" border="0" height="111" hspace="10" width="200" />A half adder adds two 1-bit binary numbers A and B to generate a 1-bit SUM (S) and a 1-bit CARRY (C) as output. The carry is theoretically carried on to the next bit position. The final sum numerically equals 2C + S. The simplest half-adder design, shown in the picture, incorporates an XOR gate for S and an AND gate for C. Half adders cannot be composed to produce larger bit adders as they lack a carry-in input. The outputs S and C can be expressed as logical functions of input variables A,B as follows:</p>
+<p style="margin-left: 2cm;"><br /><b>S = 1</b> either if (<b>A = 0</b> and <b>B = 1</b>) or if (<b>A = 1</b> and <b>B = 0</b>) = <b>A </b><span style="font-size: small;" size="2"><b>XOR</b></span><b> B</b><br /><b>C= 1</b> only if (<b>A = 1</b> and <b>B = 1</b>) = <b>A </b><span style="font-size: small;" size="2"><b>AND</b></span><b> B</b><br /><br /></p>
+<p>Truth Table</p>
+<table border="3" cellpadding="2" cellspacing="3" width="159"><colgroup><col width="14" /> <col width="13" /> <col width="59" /> <col width="37" /> </colgroup>
+<tbody>
+<tr>
+<td width="14">
+<p>A</p>
+</td>
+<td width="13">
+<p>B</p>
+</td>
+<td width="59">
+<p>CARRY</p>
+</td>
+<td width="37">
+<p>SUM</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>0</p>
+</td>
+<td width="13">
+<p>0</p>
+</td>
+<td width="59">
+<p>0</p>
+</td>
+<td width="37">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>0</p>
+</td>
+<td width="13">
+<p>1</p>
+</td>
+<td width="59">
+<p>0</p>
+</td>
+<td width="37">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>1</p>
+</td>
+<td width="13">
+<p>0</p>
+</td>
+<td width="59">
+<p>0</p>
+</td>
+<td width="37">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>1</p>
+</td>
+<td width="13">
+<p>1</p>
+</td>
+<td width="59">
+<p>1</p>
+</td>
+<td width="37">
+<p>0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Full Adder</p>
+<p><img name="graphics3" src="http://cse15-iiith.vlabs.ac.in/images/Full_Adder.svg.png" align="LEFT" border="0" height="225" hspace="10" vspace="10" width="500" />A full adder adds two 1-bit binary numbers along with a carry brought in and produces a sum and carry out as ouputs.1-bit full adder adds three 1-bit numbers, often written as A, B, and Cin, where A and B are the operands, and Cin is a bit carried in from a &acirc;past&acirc; addition.Circuit produces a 2-bit output sum typically represented by the signals Cout and S, where the sum numerically equals 2Cout + S . A full adder can be implemented in many different ways using custom transistor-level circuits or using other gates.</p>
+<p style="margin-left: 2cm;"><b>S = A </b><span style="font-size: small;" size="2"><b>XOR</b></span><b> B</b> <span style="font-size: small;" size="2"><b>XOR</b></span> <b>Cin<br />Cout = (A <br /></b><span style="font-size: small;" size="2"><b>AND</b></span><b> B) </b><span style="font-size: small;" size="2"><b>OR</b></span><b> (Cin </b><span style="font-size: small;" size="2"><b>AND</b></span><b> (A </b><span style="font-size: small;" size="2"><b>XOR</b></span><b> B))</b></p>
+<p>Truth Table</p>
+<table border="3" cellpadding="2" cellspacing="3" width="139"><colgroup><col width="14" /> <col width="13" /> <col width="25" /> <col width="33" /> <col width="11" /> </colgroup>
+<tbody>
+<tr>
+<td width="14">
+<p>A</p>
+</td>
+<td width="13">
+<p>B</p>
+</td>
+<td width="25">
+<p>Cin</p>
+</td>
+<td width="33">
+<p>Cout</p>
+</td>
+<td width="11">
+<p>S</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>0</p>
+</td>
+<td width="13">
+<p>0</p>
+</td>
+<td width="25">
+<p>0</p>
+</td>
+<td width="33">
+<p>0</p>
+</td>
+<td width="11">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>1</p>
+</td>
+<td width="13">
+<p>0</p>
+</td>
+<td width="25">
+<p>0</p>
+</td>
+<td width="33">
+<p>0</p>
+</td>
+<td width="11">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>0</p>
+</td>
+<td width="13">
+<p>1</p>
+</td>
+<td width="25">
+<p>0</p>
+</td>
+<td width="33">
+<p>0</p>
+</td>
+<td width="11">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>1</p>
+</td>
+<td width="13">
+<p>1</p>
+</td>
+<td width="25">
+<p>0</p>
+</td>
+<td width="33">
+<p>1</p>
+</td>
+<td width="11">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>0</p>
+</td>
+<td width="13">
+<p>0</p>
+</td>
+<td width="25">
+<p>1</p>
+</td>
+<td width="33">
+<p>0</p>
+</td>
+<td width="11">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>1</p>
+</td>
+<td width="13">
+<p>0</p>
+</td>
+<td width="25">
+<p>1</p>
+</td>
+<td width="33">
+<p>1</p>
+</td>
+<td width="11">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>0</p>
+</td>
+<td width="13">
+<p>1</p>
+</td>
+<td width="25">
+<p>1</p>
+</td>
+<td width="33">
+<p>1</p>
+</td>
+<td width="11">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td width="14">
+<p>1</p>
+</td>
+<td width="13">
+<p>1</p>
+</td>
+<td width="25">
+<p>1</p>
+</td>
+<td width="33">
+<p>1</p>
+</td>
+<td width="11">
+<p>1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Ripple Carry Adder</p>
+<p><img name="graphics4" src="http://cse15-iiith.vlabs.ac.in/images/ripple_carry_adder.svg.png" align="LEFT" border="0" height="200" hspace="10" vspace="10" width="500" />Multiple full adders can be used to create adders of greater bit lengths. Each full adder uses the Cout of the previous adder as its Cin. This kind of adder is a <i>ripple carry adder</i>, since the carry bits "ripple" through the full adder stages. Note that the first (and only the first) full adder may be replaced by a half adder.</p>
+<p><br /><br /> <br /><br /></p>
+<p><span style="font-size: small;" size="2"><i><b>Source: Wikipedia</b></i></span></p>
+</div>
+<p></p>
