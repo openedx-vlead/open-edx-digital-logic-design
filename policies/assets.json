@@ -1,0 +1,26 @@
+{
+    "IIITH-Digital_Logic_Design.JPG": {
+        "contentType": "image/jpeg", 
+        "content_son": {
+            "category": "asset", 
+            "course": "CSE15", 
+            "name": "IIITH-Digital_Logic_Design.JPG", 
+            "org": "IIIT-Hyderabad", 
+            "revision": null, 
+            "run": "Anytime", 
+            "tag": "c4x"
+        }, 
+        "displayname": "IIITH-Digital Logic Design.JPG", 
+        "filename": "asset-v1:IIIT-Hyderabad+CSE15+Anytime+type@asset+block@IIITH-Digital_Logic_Design.JPG", 
+        "import_path": null, 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "IIIT-Hyderabad", 
+            "CSE15", 
+            "thumbnail", 
+            "IIITH-Digital_Logic_Design-JPG.jpg", 
+            null
+        ]
+    }
+}
